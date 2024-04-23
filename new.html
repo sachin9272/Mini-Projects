@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 0px;
+            padding: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script>
+        let boxes=document.querySelector(".container").children
+        function getColor(){
+            let a=Math.ceil(0+Math.random()*255);
+            let b=Math.ceil(0+Math.random()*255);
+            let c=Math.ceil(0+Math.random()*255);
+            return `rgb(${a},${b},${c})`
+        }
+        Array.from(boxes).forEach(e=>{
+            e.style.backgroundColor = getColor()
+            e.style.color = getColor()
+        })
+    </script>
+</body>
+</html>

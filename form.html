@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 10px;
+            padding: 5px;
+            border: none;
+        }
+        .button{
+            margin-left: 40px;
+            background-color: blue;
+            display: inline;
+            color: white;
+            border-radius: 5%;
+            border: none;
+            height: 40px;
+            width: 190px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="container">
+            <label>Roll no:</label>
+            <input type="text" placeholder="Enter your Roll no.">
+        </div>
+        <div class="container">
+            <label>Sec:</label>
+            <input type="text" placeholder="Enter your Section">
+        </div>
+        <div class="container">
+            <label>Branch:</label>
+            <select name="branch" id="stream">
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <option value="AE">AE</option>
+                <option value="EE">EE</option>
+                <option value="ECE">ECE</option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="gmail">Gmail ID:</label>
+            <input type="text" placeholder="Enter your Gmail ID">
+        </div>
+        <div class="container">
+            <button class="button">Submit</button>
+        </div>
+    </div>
+    <script>
+        let button = document.getElementsByClassName("button")
+        button.addEventListener("click",()=>{
+            document.getElementsByClassName("gmail").innerHTML="<b>Your Name</b>"
+        })
+    </script>
+</body>
+</html>
+
+
+let button = document.getElementById("btn")
+button.addEventListener("dblclick",()=>{
+    document.querySelector(".box").innerHTML="Hlo! <b>Your Name</b>, How are you?"
+})

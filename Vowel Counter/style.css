@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(227, 158, 241, 0.274);
+}
+.container{
+    width: 400px;
+    text-align: center;
+    background-color: rgba(222, 242, 204, 0.336);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.header{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(139, 6, 228);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+#textarea{
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#count{
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(137, 26, 234);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.output{
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}

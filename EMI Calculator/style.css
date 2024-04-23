@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(227, 211, 211, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.header{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.loan-amount-info,.loan-amount-info,.months-to-pay-info{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+
+}
+
+input:focus{
+    border-color: red !important;
+}
+
+#calculate{
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#emi{
+    color: red;
+}

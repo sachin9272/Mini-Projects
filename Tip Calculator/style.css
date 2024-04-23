@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(227, 211, 211, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.header{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+}
+
+.bill-info,.tip-info{
+    display: block;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    padding: 10px;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 7px;
+    /* border-color: red; */
+}
+
+input:focus{
+    border-color: red;
+}
+
+#calculate{
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+#calculate:hover{
+    cursor: pointer;
+    background-color: #e66a6a;
+}
+.output{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#bill-amt{
+    font-weight: bold;
+    color: red;
+}
